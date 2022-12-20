@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
   <title>Desarrollador</title>
 </head>
@@ -21,9 +23,9 @@
       <div class="line"></div>
     </div>
     <nav class="nav-bar">
-      <ul>
+      <ul id="links">
         <li>
-          <a href="#inicio" class="active">Inicio</a>
+          <a href="#inicio" class="active-link">Inicio</a>
         </li>
         <li>
           <a href="#habilidades">Habilidades</a>
@@ -32,7 +34,7 @@
           <a href="#portafolio">Portafolio</a>
         </li>
         <li>
-          <a href="">Contacto</a>
+          <a href="#contacto">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -72,7 +74,7 @@
       </article>
 
       <div class="contenedor-ir-portafolio">
-        <a href="">IR A PORTAFOLIO</a>
+        <a href="#portafolio">IR A PORTAFOLIO</a>
       </div>
     </div>
 
@@ -99,13 +101,13 @@
             <p class="nombre-tegnologia">JAVASCRIPT</p>
 
           </div>
-    
+
           <div class="contenedor-tegnologia">
             <i class="icono-tecnologia fa-brands fa-react"></i>
             <p class="nombre-tegnologia">REACT</p>
 
           </div>
-    
+
           <div class="contenedor-tegnologia">
             <i class="icono-tecnologia fa-brands fa-node"></i>
             <p class="nombre-tegnologia">NODE.JS</p>
@@ -117,19 +119,19 @@
             <p class="nombre-tegnologia">EXPRESS.JS</p>
 
           </div>
-    
+
           <div class="contenedor-tegnologia">
             <i class="icono-tecnologia fa-brands fa-php"></i>
             <p class="nombre-tegnologia">PHP</p>
 
           </div>
-    
+
           <div class="contenedor-tegnologia">
             <i class="icono-tecnologia fa-solid fa-database"></i>
             <p class="nombre-tegnologia">MYSQL</p>
 
           </div>
-    
+
           <div class="contenedor-tegnologia">
             <i class="icono-tecnologia fa-solid fa-database"></i>
             <p class="nombre-tegnologia">MONGODB</p>
@@ -139,217 +141,337 @@
 
 
       </article>
-     
+
     </div>
 
 
-<div id="portafolio">
+    <div id="portafolio">
 
-  <h3 class="titulo-portafolio">Portafolio</h3>
+      <h3 class="titulo-portafolio">Portafolio</h3>
 
-  <section class="contenedor-portafolio">
-    <article class="portafolio-item-contenedor">
+      <section class="contenedor-portafolio">
+        <article class="portafolio-item-contenedor">
 
-      <header>
-        <h2 class="titulo-item">AupurTV</h2>
-        <p class="descripcion-item">Su principal función es evaluar el rendimiento de los trabajadores por medio de calificaciones obteniendo así el empleado del mes, también cuenta con administrador de inventario.</p>
-        <div class="contenedor-tecnologia-item">
-          <span class="item-tecnologia">HTML</span>
-          <span class="item-tecnologia">CSS</span>
-          <span class="item-tecnologia">JAVASCRIPT</span>
-          <span class="item-tecnologia">PHP</span>
-          <span class="item-tecnologia">MYSQL</span>
-        </div>
-      </header>
-
-      <div>
-        <div id="carruceluno" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
+          <header>
+            <h2 class="titulo-item">AupurTV</h2>
+            <p class="descripcion-item">Su principal función es evaluar el rendimiento de los trabajadores por medio de
+              calificaciones obteniendo así el empleado del mes, también cuenta con administrador de inventario.</p>
+            <div class="contenedor-tecnologia-item">
+              <span class="item-tecnologia">HTML</span>
+              <span class="item-tecnologia">CSS</span>
+              <span class="item-tecnologia">JAVASCRIPT</span>
+              <span class="item-tecnologia">PHP</span>
+              <span class="item-tecnologia">MYSQL</span>
             </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carruceluno" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carruceluno" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+          </header>
 
-      <footer class="portafolio-item-footer">
-        <a class="ensaleces-items" href="https://empleado.aupur.co" target="_blank">Link Pagina</a>
-      </footer>
+          <div>
+            <div id="carrucelAupur" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
 
-
-
-    </article>
-
-    <article class="portafolio-item-contenedor">
-
-      <header>
-        <h2 class="titulo-item">Fullstack Mern Veterinaria</h2>
-        <p class="descripcion-item">El aplicativo le permite al usuario registrarse, iniciar sesión, recuperar contraseña, registrar, listar, editar y eliminar pacientes, para así llevar un control detallado de los pacientes.</p>
-        <div class="contenedor-tecnologia-item">
-          <span class="item-tecnologia">HTML</span>
-          <span class="item-tecnologia">CSS</span>
-          <span class="item-tecnologia">REACT</span>
-          <span class="item-tecnologia">NODE.JS</span>
-          <span class="item-tecnologia">MONGODB</span>
-        </div>
-      </header>
-
-      <div>
-        <div id="carruceluno" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-item active">
+                  <img src="./asset/images/aupur/aupur1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/aupur/aupur2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/aupur/aupur3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/aupur/aupur4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/aupur/aupur5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/aupur/aupur6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/aupur/aupur7.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/aupur/aupur8.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="fa-solid fa-chevron-left icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrucelAupur" data-bs-slide="next">
+                <span class="fa-solid fa-chevron-right icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carruceluno" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carruceluno" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
 
-      <footer class="portafolio-item-footer">
-        <a class="ensaleces-items" href="https://github.com/johanfernandez123/fullstack-mern-Veterinaria-Frontedt" target="_blank">GitHub</a>
-        <a class="ensaleces-items" href="https://friendly-cascaron-ee290e.netlify.app" target="_blank">Link Pagina</a>
-      </footer>
+          <footer class="portafolio-item-footer">
+            <a class="ensaleces-items" href="https://empleado.aupur.co" target="_blank">Link Pagina</a>
+          </footer>
 
 
 
-    </article>
+        </article>
 
-    <article class="portafolio-item-contenedor">
+        <article class="portafolio-item-contenedor">
 
-      <header>
-        <h2 class="titulo-item">Gestor de paquetes de envíos</h2>
-        <p class="descripcion-item">Gestiona el envío de paquetes de la empresa desde el inicio hasta la entrega, cuenta con tres roles los cuales son: Usuario, Distribuidor y Administrador.</p>
-        <div class="contenedor-tecnologia-item">
-          <span class="item-tecnologia">HTML</span>
-          <span class="item-tecnologia">CSS</span>
-          <span class="item-tecnologia">REACT</span>
-          <span class="item-tecnologia">NODE.JS</span>
-          <span class="item-tecnologia">MONGODB</span>
-        </div>
-      </header>
-
-      <div>
-        <div id="carruceluno" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
+          <header>
+            <h2 class="titulo-item">Fullstack Mern Veterinaria</h2>
+            <p class="descripcion-item">El aplicativo le permite al usuario registrarse, iniciar sesión, recuperar
+              contraseña, registrar, listar, editar y eliminar pacientes, para así llevar un control detallado de los
+              pacientes.</p>
+            <div class="contenedor-tecnologia-item">
+              <span class="item-tecnologia">HTML</span>
+              <span class="item-tecnologia">CSS</span>
+              <span class="item-tecnologia">REACT</span>
+              <span class="item-tecnologia">NODE.JS</span>
+              <span class="item-tecnologia">MONGODB</span>
             </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carruceluno" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carruceluno" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+          </header>
 
-      <footer class="portafolio-item-footer">
-        <a class="ensaleces-items" href="https://github.com/johanfernandez123/front-end-GPE" target="_blank">GitHub</a>
-        <a class="ensaleces-items" href="https://voluble-chaja-ab43e9.netlify.app" target="_blank">Link Pagina</a>
-      </footer>
+          <div>
+            <div id="carrucelVeterinaria" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
 
-
-
-    </article>
-
-    <article class="portafolio-item-contenedor">
-
-      <header>
-        <h2 class="titulo-item">Buscador de recetas</h2>
-        <p class="descripcion-item">Busca recetas seleccionando la categoría que más te guste, tienes el proceso, los ingredientes y hasta videos tutoriales, además puedes guardar las mejores recetas en favoritos.</p>
-        <div class="contenedor-tecnologia-item">
-          <span class="item-tecnologia">HTML</span>
-          <span class="item-tecnologia">CSS</span>
-          <span class="item-tecnologia">JAVASCRIPT</span>
-        </div>
-      </header>
-
-      <div>
-        <div id="carruceluno" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./asset/images/descarga.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-item active">
+                  <img src="./asset/images/veterinaria/veterinaria1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/veterinaria/veterinaria2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/veterinaria/veterinaria3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/veterinaria/veterinaria4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/veterinaria/veterinaria5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/veterinaria/veterinaria6.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrucelVeterinaria" data-bs-slide="prev">
+                <span class="fa-solid fa-chevron-left icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrucelVeterinaria" data-bs-slide="next">
+                <span class="fa-solid fa-chevron-right icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carruceluno" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carruceluno" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
 
-      <footer class="portafolio-item-footer">
-        <a class="ensaleces-items" href="https://github.com/johanfernandez123/Buscador-de-Recetas" target="_blank">GitHub</a>
-        <a class="ensaleces-items" href="https://golden-faun-ed0940.netlify.app" target="_blank">Link Pagina</a>
-      </footer>
+          <footer class="portafolio-item-footer">
+            <a class="ensaleces-items" href="https://github.com/johanfernandez123/fullstack-mern-Veterinaria-Frontedt"
+              target="_blank">GitHub</a>
+            <a class="ensaleces-items" href="https://friendly-cascaron-ee290e.netlify.app" target="_blank">Link
+              Pagina</a>
+          </footer>
 
 
 
-    </article>
+        </article>
 
-  </section>
+        <article class="portafolio-item-contenedor">
 
-  
+          <header>
+            <h2 class="titulo-item">Gestor de paquetes de envíos</h2>
+            <p class="descripcion-item">Gestiona el envío de paquetes de la empresa desde el inicio hasta la entrega,
+              cuenta con tres roles los cuales son: Usuario, Distribuidor y Administrador.</p>
+            <div class="contenedor-tecnologia-item">
+              <span class="item-tecnologia">HTML</span>
+              <span class="item-tecnologia">CSS</span>
+              <span class="item-tecnologia">REACT</span>
+              <span class="item-tecnologia">NODE.JS</span>
+              <span class="item-tecnologia">MONGODB</span>
+            </div>
+          </header>
 
-</div>
+          <div>
+            <div id="carrucelEnvios" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./asset/images/envios/envios1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios7.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios8.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios9.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios10.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios11.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios12.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios13.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/envios/envios14.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrucelEnvios" data-bs-slide="prev">
+                <span class="fa-solid fa-chevron-left icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrucelEnvios" data-bs-slide="next">
+                <span class="fa-solid fa-chevron-right icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <footer class="portafolio-item-footer">
+            <a class="ensaleces-items" href="https://github.com/johanfernandez123/front-end-GPE"
+              target="_blank">GitHub</a>
+            <a class="ensaleces-items" href="https://voluble-chaja-ab43e9.netlify.app" target="_blank">Link Pagina</a>
+          </footer>
+
+
+
+        </article>
+
+        <article class="portafolio-item-contenedor">
+
+          <header>
+            <h2 class="titulo-item">Buscador de recetas</h2>
+            <p class="descripcion-item">Busca recetas seleccionando la categoría que más te guste, tienes el proceso,
+              los ingredientes y hasta videos tutoriales, además puedes guardar las mejores recetas en favoritos.</p>
+            <div class="contenedor-tecnologia-item">
+              <span class="item-tecnologia">HTML</span>
+              <span class="item-tecnologia">CSS</span>
+              <span class="item-tecnologia">JAVASCRIPT</span>
+            </div>
+          </header>
+
+          <div>
+            <div id="carrucelRecetas" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./asset/images/recetas/recetas1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/recetas/recetas2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/recetas/recetas3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/recetas/recetas4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./asset/images/recetas/recetas5.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrucelRecetas" data-bs-slide="prev">
+                <span class="fa-solid fa-chevron-left icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrucelRecetas" data-bs-slide="next">
+                <span class="fa-solid fa-chevron-right icono-direccional" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <footer class="portafolio-item-footer">
+            <a class="ensaleces-items" href="https://github.com/johanfernandez123/Buscador-de-Recetas"
+              target="_blank">GitHub</a>
+            <a class="ensaleces-items" href="https://golden-faun-ed0940.netlify.app" target="_blank">Link Pagina</a>
+          </footer>
+
+
+
+        </article>
+
+      </section>
+
+
+
+    </div>
 
    
+
+
   </main>
 
 
 
 
-
-
-  
-
   <footer>
+
+    <div id="contacto">
+      <article class="contenedor-contacto">
+        <h3 class="contacto-titulo">Contacto</h3>
+
+        <div class="contenedor-contacto-items">
+
+          <div class="items-contactos">
+            <div class="contenedor-item-contacto">
+              <i class="item-contacto fa-brands fa-whatsapp"></i>
+              <p class="informacion-contacto">+57 3227261710</p>
+            </div>
+
+            <div class="contenedor-item-contacto">
+              <i class="item-contacto fa-solid fa-phone"></i>
+              <p class="informacion-contacto">+57 3227261710</p>
+            </div>
+
+            <div class="contenedor-item-contacto">
+              <i class="item-contacto fa-regular fa-envelope"></i>
+              <p class="informacion-contacto">johanfg32@gmail.com</p>
+            </div>
+
+
+          </div>
+
+          <div class="contenedor-redes-sociales">
+
+            <div class="contenedor-item-contacto">
+              <a href="https://instagram.com/johan.fernadez22?igshid=YmMyMTA2M2Y=" target="_blank" class="fa-brands fa-instagram"></a>
+            </div>
+
+            <div class="contenedor-item-contacto">
+              <a href="https://www.facebook.com/profile.php?id=100084816547256&mibextid=ZbWKwL"  target="_blank" class="fa-brands fa-facebook-f"></a>
+            </div>
+
+            <div class="contenedor-item-contacto">
+              <a href="https://www.linkedin.com/in/johan-fernandez-gutierrez-41970225a" target="_blank" class="fa-brands fa-linkedin-in"></a>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
 
   </footer>
 
@@ -357,13 +479,9 @@
 
 
 
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    hamburger.onclick = function () {
-      navBar = document.querySelector(".nav-bar")
-      navBar.classList.toggle("active")
-    }
-  </script>
 </body>
+
+<script src="./javascript/app.js"></script>
+
 
 </html>
